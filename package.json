@@ -1,6 +1,6 @@
 {
   "name": "Take Note",
-  "version": "1.0.0",
+  "version": "14.15.1",
   "description": "",
   "engines":{
     "node" : "12.x"
