@@ -1,6 +1,5 @@
-var notesdb = require("../db/db");
-var path = require('path');
-
+const notesdb = require("../db/db");
+const path = require('path');
 
 module.exports = function (app) {
     //GET should read db.json::
@@ -21,7 +20,8 @@ module.exports = function (app) {
             title: req.body.title,
             text: req.body.text
         }
-        notesdb.push(newnotes)
+        notesdb.push(newnotes);
+        console.log("Note saved to db.json. Content: ", newnotes);
         res.send(newnotes);
 
     });
@@ -32,9 +32,9 @@ module.exports = function (app) {
 
         const index = notesdb.indexOf(newNotes);
         notesdb.splice(index, 1);
-
+        
         res.send(newNotes);
-
+        console.log("Note deleted from db.json. Content: ", newNotes);
     });
 
 };
