@@ -16,6 +16,7 @@ module.exports = function (app) {
         }
 
         let newnotes = {
+            //adds id here 
             id: notesdb.length + 1,
             title: req.body.title,
             text: req.body.text
