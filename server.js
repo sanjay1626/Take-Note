@@ -13,7 +13,7 @@ app.use(express.json());
 
 //make public folder accessible
 app.use(express.static(path.join(__dirname,"/public")));
-
+app.use(express.static(path.join(__dirname,"/db")));
 
 require("./routes/htmlRoutes")(app);
 require("./routes/apiRoutes")(app);
