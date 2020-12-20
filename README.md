@@ -11,7 +11,7 @@ This simple note taking application allows you to save notes with a title and pl
 # Getting Started
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link.
    * [GitHub Respository](https://github.com/sanjay1626/Take-Note.git) 
-   * [Heroku Git URL](https://git.heroku.com/takenote-app.git)
+   
 
 # Installation
 Clone the repository to your local development environment.
