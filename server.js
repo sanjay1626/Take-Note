@@ -4,8 +4,6 @@ const app = express();
 //PORT Listen using environment varialbles
 const port = process.env.PORT || '8080';
 
-
-
 // Sets up the Express app to handle data parsing
 
 app.use(express.urlencoded({ extended: true }));
@@ -17,10 +15,6 @@ app.use(express.static(path.join(__dirname,"/db")));
 
 require("./routes/htmlRoutes")(app);
 require("./routes/apiRoutes")(app);
-
-
-
-
 
 
 //Listen
